@@ -36,6 +36,7 @@ class TaiwanEBook:
 
     def download(self):
         download_url = self.__get_download_url()
+        print(download_url)
         title = self.__get_pdf_title()
         print("Downloading book: ", title)
         response = urlopen(download_url)
